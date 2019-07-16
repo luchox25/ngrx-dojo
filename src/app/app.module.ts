@@ -9,7 +9,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { ROOT_REDUCER, INITIAL_STATE } from './store';
 import { MoviesEffects } from './movies/store/effects/movies.effects';
 
-const effects = [MoviesEffects];
+const effects = [ MoviesEffects ];
 
 @NgModule({
   declarations: [

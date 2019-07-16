@@ -1,4 +1,4 @@
-import { Action } from '@ngrx/store';
+import { Action, Store } from '@ngrx/store';
 
 export enum EMoviesActions {
   SearchMovies = '[Movies actions] Search movies math with api',
@@ -16,3 +16,4 @@ export class SearchMoviesSuccess implements Action {
 }
 
 export type MoviesActions = SearchMovies | SearchMoviesSuccess;
+

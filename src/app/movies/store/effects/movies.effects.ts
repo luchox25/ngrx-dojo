@@ -12,7 +12,7 @@ export class MoviesEffects {
   @Effect()
   searchMovies$ = this.actions$.pipe(
     ofType<SearchMovies>(EMoviesActions.SearchMovies),
-    switchMap((params) => this.moviesService.searchMovies(params.payload)),
+    switchMap((action) => this.moviesService.searchMovies(action.payload)),
     switchMap((response: moviesResponse) =>
       of(new SearchMoviesSuccess(response.Search))
     )

@@ -1,1 +1,10 @@
-<p>search-movies works!</p>
+<div class="search-movies">
+  <div class="search-movies__component">
+    <div class="field search-movies__component-field">
+      <div class="control field search-movies__component-field__input">
+        <input class="input" type="text" placeholder="Search movies" (keyup.enter)="search(searchText.value)" #searchText>
+      </div>
+    </div>
+    <a class="button is-primary" (click)="search(searchText.value)">Search</a>
+  </div>
+</div>

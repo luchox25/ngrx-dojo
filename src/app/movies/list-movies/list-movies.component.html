@@ -1,1 +1,17 @@
-<p>list-movies works!</p>
+<div class="list-movies">
+  <ul class="list-movies__wrapper">
+    <li class="list-movies__wrapper-item" *ngFor="let movie of movies">
+      <div class="card list-movies__card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ movie.Poster }}" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">{{ movie.Title }}</p>
+          <p class="subtitle is-6">{{ movie.Year }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
